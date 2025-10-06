@@ -1,0 +1,84 @@
+@import 'tailwindcss';
+
+html {
+  @apply scroll-smooth overflow-hidden;
+}
+
+h1 {
+  @apply text-6xl lg:text-5xl;
+}
+
+h2 {
+  @apply text-4xl lg:text-3xl;
+}
+
+h3 {
+  @apply text-2xl lg:text-[20px];
+}
+
+h4 {
+  @apply text-xl lg:text-[18px];
+}
+
+section {
+  @apply py-20 lg:py-16 px-5 lg:px-[30px];
+}
+
+
+/* colors */
+
+@theme{
+
+--primary-color: #f8f9fa;
+
+--darkgray-color: #495057;
+
+--lightgray-color: #e9ecef; 
+
+--blue-color: #007bff
+
+--text-color: #212529;
+
+--darkcoal-color:#343a40;
+
+--button-color: #007bff;
+
+
+
+
+}
+
+/* 
+Header (Navigation): Background white or #f8f9fa, Text dark gray (#212529).
+
+Hero Section: Background white, H1 text dark gray (#212529), body text medium gray (#495057). CTA button primary blue (#007bff).
+
+About Section: Background #e9ecef, H2 text dark gray (#212529), body text medium gray (#495057).
+
+Projects Section: Background white, H2 text dark gray (#212529), project titles dark gray (#212529), project descriptions medium gray (#495057).
+
+Skills Section: Background #e9ecef, H2 text dark gray (#212529), skill names dark gray (#212529).
+
+Footer: Background #343a40 (dark charcoal), Text light gray (#e9ecef), links primary blue (#007bff).
+
+
+ */
+
+
+ /* 
+SECTIONS ACCORDING TO THEIR VISUAL HIERRACHY
+
+ HERO / HOME
+
+PROJECTS
+
+SKILLS
+
+ABOUT ME
+ 
+ 
+CONTACT 
+ 
+ FOOTER
+ 
+ */

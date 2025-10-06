@@ -1,0 +1,29 @@
+{
+  "name": "my-portofoloi",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4.1.14"
+  }, 
+  "scripts": {
+    "prettier": "prettier --write \"**/*.html\"",
+    "watch": "tailwindcss -i ./Assests/src/css/input.css -o ./Assests/src/style.css --watch",
+    "build": "tailwindcss -i ./Assests/src/css/input.css -o ./Assests/src/style.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hycienth-Paul025/My-Portofoloi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hycienth-Paul025/My-Portofoloi/issues"
+  },
+  "homepage": "https://github.com/Hycienth-Paul025/My-Portofoloi#readme",
+  "description": ""
+}
