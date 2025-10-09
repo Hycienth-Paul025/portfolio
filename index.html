@@ -6,13 +6,444 @@
 
     <title>Hycienth Paul - Portfolio</title>
 
-    <link 
+    <!-- Favicon -->
+
+    <link
       rel="shortcut icon"
-      href="../Assests/img/my-logo.png"
+      href="../Assets/img/favicon.webp"
       type="image/x-icon"
     />
 
-    <link href="Assests/src/style.css" rel="stylesheet" />
+    <!-- css  link -->
+    <link href="./Assets/src/css/style.css" rel="stylesheet" />
+
+    <!-- Swiper js link -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
-  <body class="bg-sky-700"></body>
+
+  <body class="bg-[var(--primary-color)] font-poppins text-[var(--text-color)]">
+    <!-- Header  -->
+
+    <header
+      class="flex items-center justify-between h-15 lg:h-20 bg-[var(--section-color)] w-full px-5 lg:px-10 fixed top-0 z-20 transition ease-in-out duration-300"
+    >
+      <a href="#">
+        <img
+          src="Assets/img/favicon.webp"
+          class="w-[50px] lg:w-[70px] rounded-full"
+          alt="logo"
+        />
+      </a>
+
+      <svg class="sm:hidden" id="hamburger">
+        <use xlink:href="assets/sprite.svg#icon-menu "></use>
+      </svg>
+
+      <nav
+        class="fixed -z-1 hidden top-0 left-0 w-full h-screen bg-black/30 backdrop-blur-sm sm:hidden"
+        id="overlay"
+      ></nav>
+
+      <nav
+        class="fixed z-5 sm:z-0 sm:static -top-200 left-0 w-full h-[50vh] sm:h-auto bg-[var(--primary-color)] sm:bg-transparent transition-all duration-300"
+        id="navbar"
+      >
+        <svg class="absolute sm:hidden top-4 right-5" id="close">
+          <use xlink:href="assets/sprite.svg#icon-close"></use>
+        </svg>
+
+        <ul
+          class="flex items-center justify-center gap-y-3.5 p-5 mt-[10%] sm:mt-0 sm:p-0 sm:justify-end flex-col sm:flex-row sm:gap-x-3.5 uppercase"
+        >
+          <li
+            class="active hover:text-[var(--btn-color)] transition duration-300"
+          >
+            <a href="#home">Home</a>
+          </li>
+
+          <li class="hover:text-[var(--btn-color)] transition duration-300">
+            <a href="#projects">Projects</a>
+          </li>
+
+          <li class="hover:text-[var(--btn-color)] transition duration-300">
+            <a href="#skills">Skills</a>
+          </li>
+
+          <li class="hover:text-[var(--btn-color)] transition duration-300">
+            <a href="#about">About</a>
+          </li>
+
+          <li class="hover:text-[var(--btn-color)] transition duration-300">
+            <a href="#contact">Contact</a>
+          </li>
+
+          <li
+            class="btn hover:bg-[var(--btn-color)] hover:text-white hover:border-[var(--section-color)] hover:fill-white"
+          >
+            <a
+              href="Assets/file/HYCIENTH PAUL.pdf"
+              target="_blank"
+              download
+              class="flex items-center"
+              >Download CV
+
+              <svg>
+                <use xlink:href="assets/sprite.svg#icon-download"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main -->
+
+    <main>
+      <!-- hero -->
+      <section id="home">
+        <!-- <div class="bg-[url('../../img/hero-bg.jpg')] bg-cover bg-left bg-no-repeat w-screen h-[100vh]"> -->
+
+        <div
+          class="flex items-center flex-col justify-between md:flex-row bg-blue-950/90 w-full h-full px-5 md:px-10 py-6"
+        >
+          <div class="text-white w-full lg:w-1/2">
+            <h1>Hi I'm paul</h1>
+            <p class="mb-10 lg:mb-15">
+              A Frontend Developer. Transforming ideas into beautiful,
+              user-friendly, and responsive interfaces.
+            </p>
+
+            <div class="flex flex-col gap-y-3.5 sm:flex-row sm:gap-x-3.5">
+              <a
+                href="#project"
+                class="btn font-medium hover:border-[var(--btn-color)] bg-[var(--btn-color)]"
+                >View My Work
+                <svg>
+                  <use xlink:href="assets/sprite.svg#icon-view"></use>
+                </svg>
+              </a>
+
+              <a
+                href="#contact"
+                class="btn font-medium hover:bg-[var(--btn-color)] hover:border-[var(--btn-color)]"
+                >Hire Me
+
+                <svg>
+                  <use xlink:href="assets/sprite.svg#icon-briefcase"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="mask-b-from-0.5">
+            <img
+              src="Assets/img/pic-1.webp"
+              class="drop-shadow-2xl grayscale-[90%]"
+              loading="lazy"
+              alt="hero-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- project -->
+
+      <section id="projects">
+        <!--   
+  <div class=" inset-0 bg-gradient-to-b  from-black/60 to-transparent"></div> -->
+
+        <div class="px-5 md:px-10 py-5 mt-10">
+          <h1 class="text-center">My Project</h1>
+          <p class="text-center">
+            My Work: Blending creativity with impactful code.
+          </p>
+
+          <!-- project 1 -->
+
+          <div
+            class="py-2.5 px-1.5 w-full flex flex-col lg:flex-row gap-y-4 mt-7 justify-between items-center rounded-md"
+          >
+            <div class="lg:w-1/2 w-full">
+              <strong class="text-2xl md:text-4xl capitalize">
+                Plant Selling Website
+              </strong>
+
+              <p class="mt-4">
+                A clean, nature-inspired storefront for indoor plant lovers.
+                This site showcases a curated selection of houseplants, from
+                ferns to succulents, alongside customer reviews and newsletter
+                sign-ups. The design emphasizes freshness, calmness, and easy
+                navigation for visitors looking to explore or shop for greenery.
+              </p>
+
+              <!-- Link -->
+              <div class="mt-1">
+                <!-- weblink -->
+                <a
+                  href="https://indoorplante.netlify.app"
+                  title="visit website"
+                  class="py-1 flex items-center font-medium hover:text-black transition duration-300 opacity-70 hover:opacity-100 w-fit"
+                  target="_blank"
+                >
+                  vist website
+                  <svg class=" ">
+                    <use xlink:href="assets/sprite.svg#icon-link"></use>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="flex items-center gap-x-2.5">
+                <img
+                  src="Assets/img/tailwindcss-logo.webp"
+                  class="w-[40px]"
+                  alt="logo"
+                />
+
+                <img src="Assets/img/js.webp" class="w-[40px]" alt="logo" />
+
+                <img
+                  src="Assets/img/node-js.webp"
+                  class="w-[40px]"
+                  alt="logo"
+                />
+              </div>
+            </div>
+
+            <div>
+              <img
+                src="Assets/img/Project/Indoorplant.webp"
+                class="w-full lg:w-[600px] h-full rounded-md shadow-md"
+                alt="project-image"
+              />
+            </div>
+          </div>
+
+          <!-- project 2 -->
+
+          <div
+            class="py-2.5 px-1.5 w-full flex flex-col-reverse lg:flex-row gap-y-4 mt-7 justify-between items-center rounded-md"
+          >
+            <div>
+              <img
+                src="Assets/img/Project/SavoryNest.webp"
+                class="w-full lg:w-[600px] h-full rounded-md shadow-md"
+                alt="project-image"
+              />
+            </div>
+
+            <div class="lg:w-1/2 w-full">
+              <strong class="text-2xl md:text-4xl capitalize">
+                SavoryNest Restaurant
+              </strong>
+
+              <p class="mt-4">
+                An elegant menu-driven site for a restaurant, combining local
+                and international dishes. Visitors can browse offerings across
+                categories (vegetables, pasta, intercontinental) with photos and
+                ratings. The design balances appetizing visuals and organized
+                structure to help users find dishes they’ll love.
+              </p>
+
+              <!-- Links -->
+              <div class="mt-1">
+                <!-- weblink -->
+                <a
+                  href="https://savorynested.netlify.app"
+                  title="visit website"
+                  class="py-1 flex items-center font-medium hover:text-black transition duration-300 opacity-70 hover:opacity-100 w-fit"
+                  target="_blank"
+                >
+                  vist website
+                  <svg class=" ">
+                    <use xlink:href="assets/sprite.svg#icon-link"></use>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="flex items-center gap-x-2.5">
+                <img src="Assets/img/Sass.webp" class="w-[40px]" alt="logo" />
+
+                <img src="Assets/img/js.webp" class="w-[40px]" alt="logo" />
+
+                <img
+                  src="Assets/img/node-js.webp"
+                  class="w-[40px]"
+                  alt="logo"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- project 3 -->
+
+          <div
+            class="py-2.5 px-1.5 w-full flex flex-col lg:flex-row gap-y-4 mt-7 justify-between items-center rounded-md"
+          >
+            <div class="lg:w-1/2 w-full">
+              <strong class="text-2xl md:text-4xl capitalize">
+                Unique Coffee Store
+              </strong>
+
+              <p class="mt-4">
+                A visually rich coffee shop / e-commerce concept showcasing a
+                variety of hot & cold brews. The site blends product highlights
+                (iced coffee, mocha, classic blends) with brand storytelling and
+                ordering prompts. It gives users a warm, inviting feel while
+                encouraging exploration and purchase.
+              </p>
+
+              <!-- Links -->
+              <div class="mt-1">
+                <!-- weblink -->
+                <a
+                  href="https://uniquecoffeestore.netlify.app"
+                  title="visit website"
+                  class="py-1 flex items-center font-medium hover:text-black transition duration-300 opacity-70 hover:opacity-100 w-fit"
+                  target="_blank"
+                >
+                  vist website
+                  <svg class=" ">
+                    <use xlink:href="assets/sprite.svg#icon-link"></use>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="flex items-center gap-x-2.5">
+                <img src="Assets/img/css.webp" class="w-[40px]" alt="logo" />
+
+                <img src="Assets/img/js.webp" class="w-[40px]" alt="logo" />
+              </div>
+            </div>
+
+            <div>
+              <img
+                src="Assets/img/Project/unique.webp"
+                class="w-full lg:w-[600px] h-full rounded-md shadow-md"
+                alt="project-image"
+              />
+            </div>
+          </div>
+
+          <a
+            href="poject.html"
+            class="btn w-fit mx-auto mt-6 hover:border-[var(--btn-color)] hover:bg-[var(--btn-color)] hover:text-white"
+          >
+            View More
+
+            <svg>
+              <use xlink:href="assets/sprite.svg#icon-view"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- skill -->
+      <section id="skills">
+        <div class="px-5 md:px-10 py-6 bg-white/40">
+          <h2>My core Skills</h2>
+          <p>These are my Technological Stack :</p>
+
+          <div class="mt-6">
+            <!-- skill 1 -->
+
+            <div>
+              <strong class="text-2xl"> Frontend Fundamentals </strong>
+
+              <div
+                class="bg-black/40 p-1 hover:bg-black/50 transition duration-300 rounded-[20px] mt-2.5 text-white w-fit flex items-center gap-5"
+              >
+                <img src="Assets/img/html.webp" alt="logo" />
+                <img src="Assets/img/css.webp" alt="logo" />
+                <img src="Assets/img/js.webp" class="w-[40px]" alt="logo" />
+                <p>HTML, CSS & JS</p>
+              </div>
+            </div>
+
+            <!-- skill 2 -->
+
+            <div class="mt-6">
+              <strong class="text-2xl"> FrameWork & Libraries </strong>
+
+              <div
+                class="bg-black/40 p-1 hover:bg-black/50 transition duration-300 rounded-[20px] mt-2.5 text-white w-fit flex items-center gap-5"
+              >
+                <img
+                  src="Assets/img/react-js.webp"
+                  class="w-[40px]"
+                  alt="logo"
+                />
+                <img src="Assets/img/Sass.webp" class="w-[40px]" alt="logo" />
+                <img
+                  src="Assets/img/tailwindcss-logo.webp"
+                  class="w-[40px]"
+                  alt="logo"
+                />
+                <p>React, Sass & Tailwindcss</p>
+              </div>
+            </div>
+
+            <!-- skill 3 -->
+
+            <div class="mt-6">
+              <strong class="text-2xl"> Version Control & Tools </strong>
+
+              <div
+                class="bg-black/40 hover:bg-black/50 transition duration-300 p-1 rounded-[20px] mt-2.5 text-white w-fit flex items-center gap-5 capitalize"
+              >
+                <img src="Assets/img/git.webp" class="w-[40px]" alt="logo" />
+
+                <img src="Assets/img/github.webp" class="w-[40px]" alt="logo" />
+
+                <img
+                  src="Assets/img/node-js.webp"
+                  class="w-[40px]"
+                  alt="logo"
+                />
+
+                <img src="Assets/img/npm.webp" class="w-[40px]" alt="logo" />
+                <p>git, Github, nodejs & npm</p>
+              </div>
+            </div>
+
+            <!-- skill 4 -->
+            <div class="mt-6">
+              <strong class="text-2xl"> Performance & Optimization </strong>
+
+              <div
+                class="bg-black/40 hover:bg-black/50 transition duration-300 p-1 rounded-[20px] mt-2.5 text-white w-1/4"
+              >
+                <ul class="px-3 capitalize">
+                  <li>responsive design</li>
+                  <li>SEO Bsics</li>
+                  <li>Lazy loading</li>
+                  <li>Image optimization</li>
+                  <li>Minification</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me -->
+      <section></section>
+
+      <!-- Contact -->
+      <section></section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer></footer>
+  </body>
+
+  <!-- Script link -->
+  <script src="Assets/js/script.js"></script>
+
+  <!-- swiper js script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </html>

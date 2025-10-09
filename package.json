@@ -8,11 +8,11 @@
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
     "tailwindcss": "^4.1.14"
-  }, 
+  },
   "scripts": {
     "prettier": "prettier --write \"**/*.html\"",
-    "watch": "tailwindcss -i ./Assests/src/css/input.css -o ./Assests/src/style.css --watch",
-    "build": "tailwindcss -i ./Assests/src/css/input.css -o ./Assests/src/style.css --minify"
+    "watch": "tailwindcss -i ./Assets/src/css/input.css -o ./Assets/src/css/style.css --watch",
+    "build": "tailwindcss -i ./Assets/src/css/input.css -o ./Assets/src/css/style.css --minify"
   },
   "repository": {
     "type": "git",
