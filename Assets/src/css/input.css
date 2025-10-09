@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@700&family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
+
+
+@import 'tailwindcss';
+
+
+html {
+  @apply scroll-smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-noto font-bold mb-2.5 uppercase;
+}
+
+h1 {
+  @apply text-4xl  md:text-6xl;
+}
+
+h2 {
+  @apply text-4xl  lg:text-3xl;
+}
+
+h3 {
+  @apply text-2xl  lg:text-[20px];
+}
+
+h4 {
+  @apply text-xl  lg:text-[18px];
+}
+
+section {
+  @apply pt-15 lg:pt-20 bg-[var(--section-color)]  relative;
+}
+
+/* px-5 md:px-10 py-6 */
+
+/* colors */
+
+@theme {
+  --primary-color: #f8f9fa;
+
+  --text-color: #212529;
+
+  --btn-color: #007bff;
+
+  --section-color: #e9ecef;
+
+}
+
+/* font family */
+
+@theme {
+  --font-noto: 'Noto serif Bold', serif; /* for Heading  */
+
+  --font-poppins: 'poppins', sans-serif; /* Body text */
+}
+
+/* Header Area */
+.active {
+  @apply font-semibold text-[var(--btn-color)];
+}
+
+/* CTA butttons */
+
+.btn {
+  @apply border-2 p-2.5 flex  cursor-pointer items-center justify-center sm:justify-end  rounded-4xl transition duration-300;
+}
+
+/* svg Icon */
+
+svg {
+  @apply w-[20px] h-[20px] lg:w-[15px] lg:h-[15px] fill-current ml-2.5;
+}
+
+/* 
+Header (Navigation): Background white or #f8f9fa, Text dark gray (#212529).
+
+Hero Section: Background white, H1 text dark gray (#212529), body text medium gray (#495057). CTA button primary blue (#007bff).
+
+About Section: Background #e9ecef, H2 text dark gray (#212529), body text medium gray (#495057).
+
+Projects Section: Background white, H2 text dark gray (#212529), project titles dark gray (#212529), project descriptions medium gray (#495057).
+
+Skills Section: Background #e9ecef, H2 text dark gray (#212529), skill names dark gray (#212529).
+
+Footer: Background #343a40 (dark charcoal), Text light gray (#e9ecef), links primary blue (#007bff).
+
+
+ */
+
+/* 
+SECTIONS ACCORDING TO THEIR VISUAL HIERRACHY
+
+ HERO / HOME
+
+PROJECTS
+
+SKILLS
+
+ABOUT ME
+ 
+ 
+CONTACT 
+ 
+ FOOTER
+ 
+ */
