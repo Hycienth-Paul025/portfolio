@@ -14,6 +14,10 @@
       type="image/x-icon"
     />
 
+    <!-- hero image easy loading -->
+
+    <link rel="preload" as="image" href="Assets/img/pic-1.webp" />
+
     <!-- css  link -->
     <link href="./Assets/src/css/style.css" rel="stylesheet" />
 
@@ -36,6 +40,7 @@
           src="Assets/img/favicon.webp"
           class="w-[50px] lg:w-[70px] rounded-full"
           alt="logo"
+          loading="lazy"
         />
       </a>
 
@@ -59,18 +64,12 @@
         <ul
           class="flex items-center justify-center gap-y-3.5 p-5 mt-[10%] sm:mt-0 sm:p-0 sm:justify-end flex-col sm:flex-row sm:gap-x-3.5 uppercase"
         >
-          <li
-            class="active hover:text-[var(--btn-color)] transition duration-300"
-          >
+          <li class="hover:text-[var(--btn-color)] transition duration-300">
             <a href="#home">Home</a>
           </li>
 
           <li class="hover:text-[var(--btn-color)] transition duration-300">
             <a href="#projects">Projects</a>
-          </li>
-
-          <li class="hover:text-[var(--btn-color)] transition duration-300">
-            <a href="#skills">Skills</a>
           </li>
 
           <li class="hover:text-[var(--btn-color)] transition duration-300">
@@ -108,7 +107,7 @@
         <!-- <div class="bg-[url('../../img/hero-bg.jpg')] bg-cover bg-left bg-no-repeat w-screen h-[100vh]"> -->
 
         <div
-          class="flex items-center flex-col justify-between md:flex-row bg-blue-950/90 w-full h-full px-5 md:px-10 py-6"
+          class="flex items-center flex-col justify-between md:flex-row bg-[var(--text-color)] w-full h-full px-5 md:px-10 py-6"
         >
           <div class="text-white w-full lg:w-1/2">
             <h1>Hi I'm paul</h1>
@@ -119,7 +118,7 @@
 
             <div class="flex flex-col gap-y-3.5 sm:flex-row sm:gap-x-3.5">
               <a
-                href="#project"
+                href="#projects"
                 class="btn font-medium hover:border-[var(--btn-color)] bg-[var(--btn-color)]"
                 >View My Work
                 <svg>
@@ -143,7 +142,6 @@
             <img
               src="Assets/img/pic-1.webp"
               class="drop-shadow-2xl grayscale-[90%]"
-              loading="lazy"
               alt="hero-image"
             />
           </div>
@@ -171,6 +169,10 @@
               <strong class="text-2xl md:text-4xl capitalize">
                 Plant Selling Website
               </strong>
+              <hr
+                class="w-[150px] mb-1 mt-2.5 text-current/50 border-1 rounded-[20px]"
+              />
+              <hr class="w-[100px] text-current/50 border-1 rounded-[20px]" />
 
               <p class="mt-4">
                 A clean, nature-inspired storefront for indoor plant lovers.
@@ -201,14 +203,21 @@
                   src="Assets/img/tailwindcss-logo.webp"
                   class="w-[40px]"
                   alt="logo"
+                  loading="lazy"
                 />
 
-                <img src="Assets/img/js.webp" class="w-[40px]" alt="logo" />
+                <img
+                  src="Assets/img/js.webp"
+                  class="w-[40px]"
+                  alt="logo"
+                  loading="lazy"
+                />
 
                 <img
                   src="Assets/img/node-js.webp"
                   class="w-[40px]"
                   alt="logo"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -216,8 +225,9 @@
             <div>
               <img
                 src="Assets/img/Project/Indoorplant.webp"
-                class="w-full lg:w-[600px] h-full rounded-md shadow-md"
+                class="w-full lg:w-[460px] h-full rounded-md shadow-md"
                 alt="project-image"
+                loading="lazy"
               />
             </div>
           </div>
@@ -230,8 +240,9 @@
             <div>
               <img
                 src="Assets/img/Project/SavoryNest.webp"
-                class="w-full lg:w-[600px] h-full rounded-md shadow-md"
+                class="w-full lg:w-[460px] rounded-md shadow-md"
                 alt="project-image"
+                loading="lazy"
               />
             </div>
 
@@ -239,6 +250,10 @@
               <strong class="text-2xl md:text-4xl capitalize">
                 SavoryNest Restaurant
               </strong>
+              <hr
+                class="w-[150px] mb-1 mt-2.5 text-current/50 border-1 rounded-[20px]"
+              />
+              <hr class="w-[100px] text-current/50 border-1 rounded-[20px]" />
 
               <p class="mt-4">
                 An elegant menu-driven site for a restaurant, combining local
@@ -265,14 +280,25 @@
               </div>
 
               <div class="flex items-center gap-x-2.5">
-                <img src="Assets/img/Sass.webp" class="w-[40px]" alt="logo" />
+                <img
+                  src="Assets/img/Sass.webp"
+                  class="w-[40px]"
+                  alt="logo"
+                  loading="lazy"
+                />
 
-                <img src="Assets/img/js.webp" class="w-[40px]" alt="logo" />
+                <img
+                  src="Assets/img/js.webp"
+                  class="w-[40px]"
+                  alt="logo"
+                  loading="lazy"
+                />
 
                 <img
                   src="Assets/img/node-js.webp"
                   class="w-[40px]"
                   alt="logo"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -287,6 +313,10 @@
               <strong class="text-2xl md:text-4xl capitalize">
                 Unique Coffee Store
               </strong>
+              <hr
+                class="w-[150px] mb-1 mt-2.5 text-current/50 border-1 rounded-[20px]"
+              />
+              <hr class="w-[100px] text-current/50 border-1 rounded-[20px]" />
 
               <p class="mt-4">
                 A visually rich coffee shop / e-commerce concept showcasing a
@@ -313,17 +343,28 @@
               </div>
 
               <div class="flex items-center gap-x-2.5">
-                <img src="Assets/img/css.webp" class="w-[40px]" alt="logo" />
+                <img
+                  src="Assets/img/css.webp"
+                  class="w-[40px]"
+                  alt="logo"
+                  loading="lazy"
+                />
 
-                <img src="Assets/img/js.webp" class="w-[40px]" alt="logo" />
+                <img
+                  src="Assets/img/js.webp"
+                  class="w-[40px]"
+                  alt="logo"
+                  loading="lazy"
+                />
               </div>
             </div>
 
             <div>
               <img
                 src="Assets/img/Project/unique.webp"
-                class="w-full lg:w-[600px] h-full rounded-md shadow-md"
+                class="w-full lg:w-[460px] h-full rounded-md shadow-md"
                 alt="project-image"
+                loading="lazy"
               />
             </div>
           </div>
@@ -342,98 +383,415 @@
       </section>
 
       <!-- skill -->
-      <section id="skills">
-        <div class="px-5 md:px-10 py-6 bg-white/40">
-          <h2>My core Skills</h2>
-          <p>These are my Technological Stack :</p>
-
-          <div class="mt-6">
-            <!-- skill 1 -->
-
-            <div>
-              <strong class="text-2xl"> Frontend Fundamentals </strong>
+      <div>
+        <div
+          class="px-5 md:px-10 py-6 lg:py-10 bg-[linear-gradient(var(--o-color),var(--o-color)),url(../../img/skill-bg.webp)] bg-center bg-cover bg-no-repeat"
+        >
+          <h2 class="text-center">My core Skills</h2>
+          <p class="text-center">
+            These are my Technological Stack for creating beautiful and modern
+            design websites
+          </p>
+          <div class="swiper">
+            <div class="mt-6 swiper-wrapper mb-7">
+              <!-- skill 1 -->
 
               <div
-                class="bg-black/40 p-1 hover:bg-black/50 transition duration-300 rounded-[20px] mt-2.5 text-white w-fit flex items-center gap-5"
+                class="bg-white p-2.5 w-[300px] h-[300px] rounded-md shadow-md swiper-slide"
               >
-                <img src="Assets/img/html.webp" alt="logo" />
-                <img src="Assets/img/css.webp" alt="logo" />
-                <img src="Assets/img/js.webp" class="w-[40px]" alt="logo" />
-                <p>HTML, CSS & JS</p>
+                <div>
+                  <strong class="text-xl mb-2 flex items-center">
+                    <svg class="mr-2">
+                      <use xlink:href="assets/sprite.svg#icon-code"></use>
+                    </svg>
+                    Languages
+                  </strong>
+
+                  <div class="text-white flex flex-col gap-2.5">
+                    <div
+                      class="py-2 px-3 bg-black/40 hover:bg-black/50 duration-300 transition font-medium flex gap-x-2.5 items-center rounded-md"
+                    >
+                      <img
+                        src="Assets/img/html.webp"
+                        alt="logo"
+                        loading="lazy"
+                      />
+                      HTML
+                    </div>
+
+                    <div
+                      class="py-2 px-3 bg-black/40 hover:bg-black/50 duration-300 transition font-medium flex gap-x-2.5 items-center rounded-md"
+                    >
+                      <img
+                        src="Assets/img/css.webp"
+                        alt="logo"
+                        loading="lazy"
+                      />
+                      CSS
+                    </div>
+
+                    <div
+                      class="py-2 px-3 bg-black/40 hover:bg-black/50 duration-300 transition font-medium flex gap-x-2.5 items-center rounded-md"
+                    >
+                      <img src="Assets/img/js.webp" alt="logo" loading="lazy" />
+                      JS
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Skill 2 -->
+
+              <div
+                class="bg-white p-2.5 w-[300px] h-[300px] rounded-md shadow-md swiper-slide"
+              >
+                <div>
+                  <strong class="text-xl mb-2 flex items-center">
+                    <svg class="mr-2">
+                      <use xlink:href="assets/sprite.svg#icon-layers"></use>
+                    </svg>
+                    Frameworks & Libraries
+                  </strong>
+
+                  <div class="text-white flex flex-col gap-2.5">
+                    <div
+                      class="py-2 px-3 bg-black/40 hover:bg-black/50 duration-300 transition font-medium flex gap-x-2.5 items-center rounded-md"
+                    >
+                      <img
+                        src="Assets/img/sass.webp"
+                        alt="logo"
+                        loading="lazy"
+                        class="w-[50px]"
+                      />
+                      SASS
+                    </div>
+
+                    <div
+                      class="py-2 px-3 bg-black/40 hover:bg-black/50 duration-300 transition font-medium flex gap-x-2.5 items-center rounded-md"
+                    >
+                      <img
+                        src="Assets/img/react-js.webp"
+                        alt="logo"
+                        loading="lazy"
+                      />
+                      React Js
+                    </div>
+
+                    <div
+                      class="py-2 px-3 bg-black/40 hover:bg-black/50 duration-300 transition font-medium flex gap-x-2.5 items-center rounded-md"
+                    >
+                      <img
+                        src="Assets/img/tailwindcss-logo.webp"
+                        class="w-[50px]"
+                        alt="logo"
+                        loading="lazy"
+                      />
+                      TailwindCss
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- skill 3 -->
+
+              <div
+                class="bg-white p-2.5 w-[300px] h-[300px] rounded-md shadow-md swiper-slide"
+              >
+                <div>
+                  <strong class="text-xl mb-2 flex items-center">
+                    <svg class="mr-2">
+                      <use xlink:href="assets/sprite.svg#icon-wrench"></use>
+                    </svg>
+                    Tools & Techniques
+                  </strong>
+
+                  <div class="text-white flex flex-col gap-2.5">
+                    <div
+                      class="py-2 px-3 bg-black/40 hover:bg-black/50 duration-300 transition font-medium flex gap-x-2.5 items-center rounded-md"
+                    >
+                      <img
+                        src="Assets/img/git.webp"
+                        alt="logo"
+                        loading="lazy"
+                        class="w-[50px]"
+                      />
+                      Git
+                    </div>
+
+                    <div
+                      class="py-2 px-3 bg-black/40 hover:bg-black/50 duration-300 transition font-medium flex gap-x-2.5 items-center rounded-md"
+                    >
+                      <img
+                        src="Assets/img/github.webp"
+                        alt="logo"
+                        loading="lazy"
+                        class="w-[50px]"
+                      />
+                      Github
+                    </div>
+
+                    <div
+                      class="py-2 px-3 bg-black/40 hover:bg-black/50 duration-300 transition font-medium flex gap-x-2.5 items-center rounded-md"
+                    >
+                      <img
+                        src="Assets/img/node-js.webp"
+                        class="w-[50px]"
+                        alt="logo"
+                        loading="lazy"
+                      />
+                      Node js
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- skill 4 -->
+
+              <div
+                class="p-2.5 w-[300px] h-[300px] rounded-md swiper-slide bg-white shadow-md"
+              >
+                <div>
+                  <strong
+                    class="mb-2 text-xl flex-wrap flex gapx-1 pl-3 md:pl-0 items-center"
+                  >
+                    <svg class="mr-2 hidden sm:block">
+                      <use xlink:href="assets/sprite.svg#icon-cube"></use>
+                    </svg>
+                    Performance & Optimization
+                  </strong>
+
+                  <ul
+                    class="px-3 capitalize text-white font-medium flex items-center flex-col gap-1.5"
+                  >
+                    <li class="bg-black/50 w-full py-2 px-4 rounded-md">
+                      responsive design
+                    </li>
+                    <li class="bg-black/50 w-full py-2 px-4 rounded-md">
+                      SEO Bsics
+                    </li>
+                    <li class="bg-black/50 w-full py-2 px-4 rounded-md">
+                      Lazy loading
+                    </li>
+                    <li class="bg-black/50 w-full py-2 px-4 rounded-md">
+                      Image optimization
+                    </li>
+                    <li class="bg-black/50 w-full py-2 px-4 rounded-md">
+                      Minification
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
 
-            <!-- skill 2 -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
 
-            <div class="mt-6">
-              <strong class="text-2xl"> FrameWork & Libraries </strong>
+      <!-- About Me -->
+      <section id="about">
+        <div class="px-5 md:px-10 py-6">
+          <div
+            class="flex items-center flex-col gap-y-10 lg:flex-row justify-between mt-8"
+          >
+            <div class="w-full lg:w-1/2">
+              <strong class="capitalize text-4xl">About me</strong>
+              <hr
+                class="w-[150px] mb-1 text-current/50 border-1 rounded-[20px]"
+              />
+              <hr class="w-[100px] text-current/50 border-1 rounded-[20px]" />
 
-              <div
-                class="bg-black/40 p-1 hover:bg-black/50 transition duration-300 rounded-[20px] mt-2.5 text-white w-fit flex items-center gap-5"
-              >
-                <img
-                  src="Assets/img/react-js.webp"
-                  class="w-[40px]"
-                  alt="logo"
-                />
-                <img src="Assets/img/Sass.webp" class="w-[40px]" alt="logo" />
-                <img
-                  src="Assets/img/tailwindcss-logo.webp"
-                  class="w-[40px]"
-                  alt="logo"
-                />
-                <p>React, Sass & Tailwindcss</p>
+              <p class="mt-5 leading-6">
+                I’m a passionate Front-End Developer dedicated to building fast,
+                accessible, and visually engaging web experiences. I specialize
+                in HTML, CSS, JavaScript, and modern frameworks like React and
+                Next.js, turning creative ideas into functional, user-friendly
+                interfaces. My focus is on crafting responsive layouts,
+                optimizing performance, and ensuring smooth interactions that
+                make websites both beautiful and intuitive. I enjoy transforming
+                complex concepts into clean, maintainable code that brings
+                designs to life. Beyond coding, I’m constantly exploring new
+                technologies, improving my design sense, and staying updated
+                with the latest web trends — all to deliver solutions that not
+                only work flawlessly but also delight users.
+              </p>
+
+              <div>
+                <a
+                  href="Assets/file/HYCIENTH PAUL.pdf"
+                  target="_blank"
+                  class="btn w-fit my-2.5 hover:bg-[var(--btn-color)] hover:text-white hover:border-[var(--btn-color)]"
+                >
+                  View Resume
+                </a>
               </div>
             </div>
 
-            <!-- skill 3 -->
-
-            <div class="mt-6">
-              <strong class="text-2xl"> Version Control & Tools </strong>
-
-              <div
-                class="bg-black/40 hover:bg-black/50 transition duration-300 p-1 rounded-[20px] mt-2.5 text-white w-fit flex items-center gap-5 capitalize"
-              >
-                <img src="Assets/img/git.webp" class="w-[40px]" alt="logo" />
-
-                <img src="Assets/img/github.webp" class="w-[40px]" alt="logo" />
-
-                <img
-                  src="Assets/img/node-js.webp"
-                  class="w-[40px]"
-                  alt="logo"
-                />
-
-                <img src="Assets/img/npm.webp" class="w-[40px]" alt="logo" />
-                <p>git, Github, nodejs & npm</p>
-              </div>
-            </div>
-
-            <!-- skill 4 -->
-            <div class="mt-6">
-              <strong class="text-2xl"> Performance & Optimization </strong>
-
-              <div
-                class="bg-black/40 hover:bg-black/50 transition duration-300 p-1 rounded-[20px] mt-2.5 text-white w-1/4"
-              >
-                <ul class="px-3 capitalize">
-                  <li>responsive design</li>
-                  <li>SEO Bsics</li>
-                  <li>Lazy loading</li>
-                  <li>Image optimization</li>
-                  <li>Minification</li>
-                </ul>
-              </div>
+            <div
+              class="relative before:content-[''] before:absolute before:top-4 before:right-[15%] before:w-[300px] before:h-[300px] before:rounded-full before:bg-black/20 before:blur-lg before:block"
+            >
+              <img
+                src="Assets/img/pic-3.webp"
+                class="grayscale-90 mask-b-from-30"
+                loading="lazy"
+                alt="about-image"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <!-- About Me -->
-      <section></section>
-
       <!-- Contact -->
-      <section></section>
+      <section id="contact" class="overflow-hidden">
+        <div
+          class="px-5 md:px-10 py-6 pb-36 bg-[linear-gradient(var(--o-color),var(--o-color)),url('../../img/bg.webp')] bg-cover bg-no-repeat bg-left"
+        >
+          <h1 class="text-4xl text-center">Let’s Work Together</h1>
+          <p class="text-center">
+            Have a project in mind, a question, Feel free to reach out — I’ll
+            get back to you as soon as possible.
+          </p>
+
+          <div
+            class="flex items-center relative md:justify-between mt-20 flex-col gap-y-5 md:gap-y-0 lg:flex-row"
+          >
+            <div class="flex justify-between items-center">
+              <div class="w-full lg:w-1/2 z-[2] p-2.5 relative">
+                <h2 class="mb-2.5">Get in Touch</h2>
+                <hr
+                  class="w-[150px] mb-1 text-current/50 border-1 rounded-[20px]"
+                />
+                <hr
+                  class="w-[100px] text-current/50 border-1 rounded-[20px] mb-2"
+                />
+                <p class="mb-2.5">
+                  I’d love to hear more about your project and how I can help
+                  bring your ideas to life through clean, modern, and
+                  user-focused interfaces.
+                </p>
+                <p class="font-medium">Let's Connet</p>
+
+                <div class="flex items-center mt-2.5 gap-x-2.5">
+                  <a
+                    href="https://x.com/HycienthPaul025?t=WMqmJ4kRYtVxW-bDpFHIpw&s=09"
+                    target="_blank"
+                    class="hover:-translate-y-1 duration-300 transition-transform"
+                  >
+                    <svg>
+                      <use xlink:href="assets/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEz5Zlc9dsQvQAAAZnf6e3QOmXk5k38ZhgDSvuN2bqvIC51a3I4ERIDPgyqY-t7c4qj5b1sHQ0VCr3zNcwni2LrsCghUS8KbAOrvwCYNCkPvG4F-WaoARdfJfrV6VwR58zN81Q=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fhycienth-paul"
+                    target="_blank"
+                    class="hover:-translate-y-1 duration-300 transition-transform"
+                  >
+                    <svg>
+                      <use xlink:href="assets/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+
+                  <a
+                    href="https://github.com/Hycienth-Paul025"
+                    target="_blank"
+                    class="hover:-translate-y-1 duration-300 transition-transform"
+                  >
+                    <svg>
+                      <use xlink:href="assets/sprite.svg#icon-github"></use>
+                    </svg>
+                  </a>
+
+                  <a
+                    href="https://wa.me/2347032545736?text=Hi%20Hycienth,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!"
+                    target="_blank"
+                    class="hover:-translate-y-1 duration-300 transition-transform"
+                  >
+                    <svg>
+                      <use xlink:href="assets/sprite.svg#icon-whatsapp"></use>
+                    </svg>
+                  </a>
+
+                  <a
+                    href="mailto:hycienthP@gmail.com?subject=Project Inquiry&body=Hi, I’d like to discuss a new project with you."
+                    target="_blank"
+                    class="hover:-translate-y-1 duration-300 transition-transform"
+                  >
+                    <svg>
+                      <use xlink:href="assets/sprite.svg#icon-message"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 mt-2.5 lg:mt-0">
+              <form
+                method="post"
+                action="https://formspree.io/f/maypqxyz"
+                class="w-full relative z-10"
+              >
+                <input type="hidden" name="form-name" value="contact" />
+
+                <div>
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="Your name"
+                    class="px-5 py-2.5 outline-none w-full lg:w-[500px] rounded-[20px] border-1 mb-2 focus:bg-white transition-colors duration-300"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="Email"
+                    class="outline-none px-5 py-2.5 border-1 mb-2 l w-full lg:w-[500px] rounded-[20px] focus:bg-white transition-colors duration-300"
+                  />
+                </div>
+                <div>
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    class="h-[100px] w-full lg:w-[500px] rounded-[20px] px-5 py-2.5 border-1 border-[var(--text-color)] mb-2 outline-none focus:bg-white transition-colors duration-300"
+                    id="message"
+                    required
+                  ></textarea>
+
+                  <button
+                    class="btn relative group font-medium overflow-hidden hover:border-transparent transition-border duration-300"
+                  >
+                    <span
+                      class="absolute inset-0 bg-[var(--btn-color)] translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
+                    >
+                    </span>
+
+                    <span
+                      class="relative group-hover:text-white transition-colors duration-300"
+                    >
+                      Send
+                    </span>
+
+                    <svg
+                      class="group-hover:text-white z-10 transition-all duration-300 translate-x-[200%] group-hover:translate-x-0"
+                    >
+                      <use xlink:href="assets/sprite.svg#icon-send"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- <div
+              class="relative h-[50vh] overflow-hidden  rounded-md   w-1/2 bg-[url('../../img/contact-bg.webp')]"
+            >
+              <div class="absolute inset-0 bg-white/60"></div> -->
+            <!-- <div class="bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../../img/contact-bg.webp')] bg-cover bg-center bg-no-repeat h-[400px] w-1/2 flex items-center justify-center text-white"> -->
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -442,8 +800,11 @@
   </body>
 
   <!-- Script link -->
-  <script src="Assets/js/script.js"></script>
+  <script src="Assets/js/script.js" defer></script>
 
   <!-- swiper js script -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+    defer
+  ></script>
 </html>
