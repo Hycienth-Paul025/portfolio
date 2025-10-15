@@ -37,7 +37,7 @@ p {
   @apply text-[14px] md:text-[15px];
 }
 
-/* px-5 md:px-10 py-6 */
+/* px-5 md:px-10  */
 
 /* colors */
 
@@ -78,4 +78,16 @@ p {
 
 svg {
   @apply w-[20px] h-[20px] lg:w-[17px] lg:h-[17px] fill-current ml-2.5;
+}
+
+/* Swiper Bullet */
+
+.swiper .swiper-pagination-bullet {
+  @apply bg-[var(--btn-color)] ;
+  opacity: .5;
+
+}
+
+.swiper .swiper-pagination-bullet-active{
+  opacity: 1;
 }

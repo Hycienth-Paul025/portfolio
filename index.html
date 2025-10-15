@@ -107,7 +107,7 @@
         <!-- <div class="bg-[url('../../img/hero-bg.jpg')] bg-cover bg-left bg-no-repeat w-screen h-[100vh]"> -->
 
         <div
-          class="flex items-center flex-col justify-between md:flex-row bg-[var(--text-color)] w-full h-full px-5 md:px-10 py-6"
+          class="flex items-center flex-col justify-between md:flex-row bg-[var(--text-color)] w-full h-full px-2.5 md:px-10 py-6"
         >
           <div class="text-white w-full lg:w-1/2">
             <h1>Hi I'm paul</h1>
@@ -154,7 +154,7 @@
         <!--   
   <div class=" inset-0 bg-gradient-to-b  from-black/60 to-transparent"></div> -->
 
-        <div class="px-5 md:px-10 py-5 mt-10">
+        <div class="px-2.5 md:px-10 mt-10">
           <h1 class="text-center">My Project</h1>
           <p class="text-center">
             My Work: Blending creativity with impactful code.
@@ -385,7 +385,7 @@
       <!-- skill -->
       <div>
         <div
-          class="px-5 md:px-10 py-6 lg:py-10 bg-[linear-gradient(var(--o-color),var(--o-color)),url(../../img/skill-bg.webp)] bg-center bg-cover bg-no-repeat"
+          class="px-2.5 md:px-10 py-6 lg:py-10 bg-[linear-gradient(var(--o-color),var(--o-color)),url(../../img/skill-bg.webp)] bg-center bg-cover bg-no-repeat"
         >
           <h2 class="text-center">My core Skills</h2>
           <p class="text-center">
@@ -393,7 +393,7 @@
             design websites
           </p>
           <div class="swiper">
-            <div class="mt-6 swiper-wrapper mb-7">
+            <div class="mt-6 swiper-wrapper mb-8">
               <!-- skill 1 -->
 
               <div
@@ -590,7 +590,7 @@
 
       <!-- About Me -->
       <section id="about">
-        <div class="px-5 md:px-10 py-6">
+        <div class="px-2.5 md:px-10">
           <div
             class="flex items-center flex-col gap-y-10 lg:flex-row justify-between mt-8"
           >
@@ -601,7 +601,7 @@
               />
               <hr class="w-[100px] text-current/50 border-1 rounded-[20px]" />
 
-              <p class="mt-5 leading-6">
+              <p class="mt-5 leading-6 text-justify lg:text-left">
                 I’m a passionate Front-End Developer dedicated to building fast,
                 accessible, and visually engaging web experiences. I specialize
                 in HTML, CSS, JavaScript, and modern frameworks like React and
@@ -628,10 +628,10 @@
             </div>
 
             <div
-              class="relative before:content-[''] before:absolute before:top-4 before:right-[15%] before:w-[300px] before:h-[300px] before:rounded-full before:bg-black/20 before:blur-lg before:block"
+              class="relative before:content-[''] before:absolute before:top-4 before:right-[8%] lg:before:right-[17%] before:w-[300px] before:h-[300px] before:rounded-full before:bg-black/20 before:blur-lg before:block"
             >
               <img
-                src="Assets/img/pic-3.webp"
+                src="Assets/img/pic-2.webp"
                 class="grayscale-90 mask-b-from-30"
                 loading="lazy"
                 alt="about-image"
@@ -644,7 +644,7 @@
       <!-- Contact -->
       <section id="contact" class="overflow-hidden">
         <div
-          class="px-5 md:px-10 py-6 pb-36 bg-[linear-gradient(var(--o-color),var(--o-color)),url('../../img/bg.webp')] bg-cover bg-no-repeat bg-left"
+          class="px-2.5 md:px-10 py-6 pb-36 bg-[linear-gradient(var(--o-color),var(--o-color)),url('../../img/bg.webp')] bg-cover bg-no-repeat bg-left"
         >
           <h1 class="text-4xl text-center">Let’s Work Together</h1>
           <p class="text-center">
@@ -656,7 +656,7 @@
             class="flex items-center relative md:justify-between mt-20 flex-col gap-y-5 md:gap-y-0 lg:flex-row"
           >
             <div class="flex justify-between items-center">
-              <div class="w-full lg:w-1/2 z-[2] p-2.5 relative">
+              <div class="w-full lg:w-1/2 z-[2] relative">
                 <h2 class="mb-2.5">Get in Touch</h2>
                 <hr
                   class="w-[150px] mb-1 text-current/50 border-1 rounded-[20px]"
@@ -737,6 +737,7 @@
                   <input
                     type="text"
                     name="name"
+                    autocomplete="off"
                     required
                     placeholder="Your name"
                     class="px-5 py-2.5 outline-none w-full lg:w-[500px] rounded-[20px] border-1 mb-2 focus:bg-white transition-colors duration-300"
@@ -775,7 +776,7 @@
                     </span>
 
                     <svg
-                      class="group-hover:text-white z-10 transition-all duration-300 translate-x-[200%] group-hover:translate-x-0"
+                      class="group-hover:text-white z-10 transition-all duration-300 translate-x-[200%] group-hover:translate-x-0 hidden md:block"
                     >
                       <use xlink:href="assets/sprite.svg#icon-send"></use>
                     </svg>
