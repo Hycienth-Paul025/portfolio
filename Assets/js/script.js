@@ -68,12 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
         sectLink.classList.remove('active');
       }
     });
-
-
   });
 
-
-  
   /// Add shadow to header when scrolled down
 
   window.addEventListener('scroll', () => {
@@ -114,7 +110,35 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  const html = document.documentElement;
+  const themeTog = document.getElementById('theme-toggle');
+  const themeBtn = document.getElementById('theme-btn');
+  const heroSect = document.getElementById('hero');
 
+  if (localStorage.theme === 'dark') {
+    html.classList.add('dark');
 
-  
+    themeBtn.classList.add('top-[70%]');
+    themeBtn.classList.add('bg-gray-700');
+
+  } else {
+    html.classList.remove('dark');
+
+    themeBtn.classList.remove('top-[70%]');
+
+    themeBtn.classList.remove('bg-gray-700');
+
+  }
+
+  themeTog.addEventListener('click', () => {
+    themeBtn.classList.toggle('top-[70%]');
+
+    html.classList.toggle('dark');
+
+    if (html.classList.contains('dark')) {
+      localStorage.theme = 'dark';
+    } else {
+      localStorage.theme = 'light';
+    }
+  });
 });

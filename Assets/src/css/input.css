@@ -3,8 +3,25 @@
 @import 'tailwindcss';
 
 html {
-  @apply scroll-smooth;
+  @apply scroll-smooth  overflow-x-hidden transition-colors duration-400;
 }
+
+
+
+/* 🌙 Dark mode equivalents */
+.dark {
+  --primary-color: #0f172a;
+  --text-color: #e5e7eb;
+  --o-color: rgba(15, 23, 42, 0.9);
+  --bo-color: rgba(31, 41, 55, 0.8);
+  --btn-color: #38bdf8;
+  --section-color: #1e293b;
+
+
+@apply placeholder:text-white;
+
+}
+
 
 h1,
 h2,
@@ -30,7 +47,7 @@ h4 {
 }
 
 section {
-  @apply pt-15 lg:pt-20 bg-[var(--section-color)]  relative;
+  @apply pt-15 lg:pt-20 bg-[var(--section-color)] relative;
 }
 
 p {
@@ -71,7 +88,7 @@ p {
 /* CTA butttons */
 
 .btn {
-  @apply border-2 p-2.5 flex  cursor-pointer items-center justify-center sm:justify-end  rounded-4xl transition duration-300;
+  @apply border-2 p-2.5 flex cursor-pointer items-center justify-center sm:justify-end  rounded-4xl transition duration-300;
 }
 
 /* svg Icon */
@@ -83,11 +100,10 @@ svg {
 /* Swiper Bullet */
 
 .swiper .swiper-pagination-bullet {
-  @apply bg-[var(--btn-color)] ;
-  opacity: .5;
-
+  @apply bg-[var(--btn-color)];
+  opacity: 0.5;
 }
 
-.swiper .swiper-pagination-bullet-active{
+.swiper .swiper-pagination-bullet-active {
   opacity: 1;
 }
