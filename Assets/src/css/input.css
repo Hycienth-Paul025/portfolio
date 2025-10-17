@@ -6,21 +6,91 @@ html {
   @apply scroll-smooth  overflow-x-hidden transition-colors duration-400;
 }
 
-
-
-/* 🌙 Dark mode equivalents */
+/* ==== DARK THEME VARIABLES ==== */
 .dark {
-  --primary-color: #0f172a;
-  --text-color: #e5e7eb;
-  --o-color: rgba(15, 23, 42, 0.9);
-  --bo-color: rgba(31, 41, 55, 0.8);
-  --btn-color: #38bdf8;
-  --section-color: #1e293b;
-
-
-@apply placeholder:text-white;
-
+  --primary-color: #202020;
+  --text-color: #f8f9fa;
+  --o-color: rgba(0, 0, 0, 0.7);
+  --bo-color: rgba(255, 255, 255, 0.2);
+  --btn-color: #0d6efd;
+  --section-color: #1e1e1e;
+  background-color: black;
+  color: var(--text-color);
 }
+
+/* === Dark Theme Section Styles === */
+
+/* HOME SECTION */
+ .dark .home {
+  @apply bg-[var(--primary-color)]
+}
+
+/* SKILLS SECTION */
+.dark .skills {
+  background:
+    linear-gradient(to bottom, rgba(--bo-color), rgba(--bo-color), url(Assets/img/skill-bg.webp));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dark .skill-heading{
+  color: black;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder{
+  @apply text-white/60
+}
+
+
+/* Make text and buttons pop */
+.dark h1,
+.dark h2,
+.dark p,
+.dark strong {
+color: var(--text-color);
+}
+
+ .dark .btn {
+  border-color: white;
+  color: var(--text-color);
+}
+
+.dark .btn:hover {
+  background: var(--btn-color);
+  color: #fff;
+  border-color: transparent;
+}
+
+/* NAVBAR dark background */
+.dark header {
+  background: var(--primary-color);
+}
+
+
+/* Theme Toggle Btn */
+
+.dark .theme-btn{
+  @apply bg-[var(--o-color)]
+}
+
+
+
+/* Dark Theme Swiper Bullet */
+
+ .dark .swiper .swiper-pagination-bullet {
+  @apply bg-[var(--text-color)];
+  opacity: 0.5;
+}
+
+.dark .swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+
+
+
 
 
 h1,
@@ -63,7 +133,7 @@ p {
 
   --text-color: #212529;
 
-  --o-color: rgba(225, 225, 225, 0.8);
+  --o-color: rgba(225, 225, 225, 0.6);
 
   --bo-color: rgba(22, 36, 84, 0.6);
 
@@ -107,3 +177,5 @@ svg {
 .swiper .swiper-pagination-bullet-active {
   opacity: 1;
 }
+
+

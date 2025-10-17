@@ -61,13 +61,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const sectLink = document.querySelector(
         '#navbar ul li a[href*=' + sectId + ']'
       );
-
-      if (scrollDown > secTop && scrollDown <= secTop + sectHeight) {
-        sectLink.classList.add('active');
-      } else {
-        sectLink.classList.remove('active');
+      if (sectLink) {
+        if (scrollDown > secTop && scrollDown <= secTop + sectHeight) {
+          sectLink.classList.add('active');
+        } else {
+          sectLink.classList.remove('active');
+        }
       }
+
     });
+
   });
 
   /// Add shadow to header when scrolled down
@@ -113,32 +116,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const html = document.documentElement;
   const themeTog = document.getElementById('theme-toggle');
   const themeBtn = document.getElementById('theme-btn');
-  const heroSect = document.getElementById('hero');
+
+// For purpose in case i want to add any functions on both icon
+
+  // const iconSun = document.getElementById('icon-sun');
+  // const iconMoon = document.getElementById('icon-moon');
 
   if (localStorage.theme === 'dark') {
     html.classList.add('dark');
-
     themeBtn.classList.add('top-[70%]');
-    themeBtn.classList.add('bg-gray-700');
-
   } else {
     html.classList.remove('dark');
-
     themeBtn.classList.remove('top-[70%]');
-
-    themeBtn.classList.remove('bg-gray-700');
-
   }
 
   themeTog.addEventListener('click', () => {
-    themeBtn.classList.toggle('top-[70%]');
-
     html.classList.toggle('dark');
 
     if (html.classList.contains('dark')) {
+      themeBtn.classList.add('top-[70%]');
       localStorage.theme = 'dark';
     } else {
       localStorage.theme = 'light';
+      themeBtn.classList.remove('top-[70%]');
     }
   });
 });
