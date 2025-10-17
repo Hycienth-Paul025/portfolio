@@ -1,6 +1,6 @@
 {
   "name": "my-portofoloi",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "script.js",
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.14",
